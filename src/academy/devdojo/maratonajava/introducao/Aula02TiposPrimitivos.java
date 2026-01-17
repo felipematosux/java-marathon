@@ -12,13 +12,13 @@ public class Aula02TiposPrimitivos {
         boolean verdadeiro = true;
         boolean falso = false;
         char caractere = '\u0041';
+        String fullName = "Felipe Matos";
 
         System.out.println("I am " + age + " years old.");
         System.out.println(falso);
         System.out.println("char " + caractere);
         System.out.println(bigNumber);
-
-
+        System.out.println("Oi, meu nome é " + fullName);
 
     }
 }
