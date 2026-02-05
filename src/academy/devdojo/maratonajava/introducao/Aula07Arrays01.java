@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula0Arrays01 {
+public class Aula07Arrays01 {
     public static void main(String[] args) {
         int[] age = new int[3];
         age[0] = 21;
