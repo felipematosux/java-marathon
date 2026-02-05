@@ -6,9 +6,13 @@ public class Aula0Arrays02 {
         // char '\u0000' ' '
         // boolean = false
         //String = null
-        String[] names = new String[3];
-        System.out.println(names[0]);
-        System.out.println(names[1]);
-        System.out.println(names[3]);
+        String[] names = new String[4];
+        names[0] = "Goku";
+        names[1] = "Kurosaki";
+        names[2] = "Luffy";
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
     }
 }
