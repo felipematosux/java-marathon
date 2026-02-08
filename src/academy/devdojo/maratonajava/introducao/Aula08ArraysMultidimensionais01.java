@@ -19,8 +19,16 @@ public class Aula08ArraysMultidimensionais01 {
         days[2][2] = 30;
 
        for (int i = 0; i < days.length; i++) {
-           for (int j = 0; j < days[0].length; j++) {
+           for (int j = 0; j < days[i].length; j++) {
                System.out.println(days[i][j]);
+           }
+       }
+
+        System.out.println("--------------------------------");
+
+       for (int[] arrBase: days) {
+           for (int num: arrBase) {
+               System.out.println(num);
            }
        }
 
@@ -40,8 +48,16 @@ public class Aula08ArraysMultidimensionais01 {
        teams[2][2] = "Ino";
 
        for (int i = 0; i < teams.length; i++) {
-           for (int j = 0; j < teams[0].length; j++) {
+           for (int j = 0; j < teams[i].length; j++) {
                System.out.println(teams[i][j]);
+           }
+       }
+
+        System.out.println("--------------------------");
+
+       for (String[] ninjaBase: teams) {
+           for (String num: ninjaBase) {
+               System.out.println(num);
            }
        }
 
