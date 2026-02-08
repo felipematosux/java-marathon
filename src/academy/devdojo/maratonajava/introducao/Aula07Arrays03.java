@@ -13,17 +13,5 @@ public class Aula07Arrays03 {
         for(int num : numbers3) {
             System.out.println(num);
         }
-
-        String[] ninjas = {"Naruto Uzumaki", "Sasuke Uchiha", "Sakura Haruno", "Hinata Hyuga", "Rock Lee"};
-
-        for(String ninja : ninjas) {
-            System.out.println(ninja);
-        }
-
-        String[] rank = {"Genin", "Chounnin", "Jounnin"};
-
-        for(String ranque : rank) {
-            System.out.println(ranque);
-        }
     }
 }
