@@ -23,5 +23,28 @@ public class Aula08ArraysMultidimensionais01 {
                System.out.println(days[i][j]);
            }
        }
+
+       // Create multidimensional teams of the Naruto anime
+
+       String[][] teams = new String [3][3];
+       teams[0][0] = "Naruto";
+       teams[0][1] = "Sakura";
+       teams[0][2] = "Sasuke";
+
+       teams[1][0] = "Lee";
+       teams[1][1] = "Ten Ten";
+       teams[1][2] = "Neji";
+
+       teams[2][0] = "Shikamaru";
+       teams[2][1] = "Choji";
+       teams[2][2] = "Ino";
+
+       for (int i = 0; i < teams.length; i++) {
+           for (int j = 0; j < teams[0].length; j++) {
+               System.out.println(teams[i][j]);
+           }
+       }
+
+
     }
 }
