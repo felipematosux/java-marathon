@@ -10,7 +10,7 @@ public class Exercise01Variables {
          */
         System.out.println("---------------------------");
         System.out.println("EXERCISE 2: Average Grade Calculator");
-        System.out.println("---------------------------");
+
         double celsius, fahrenheit;
 
         celsius = 25;
@@ -22,7 +22,7 @@ public class Exercise01Variables {
         System.out.println("Celsius: " + fahrenheitToCelsius);
         System.out.println("Fahrenheit: " + celsiusToFahrenheit);
 
-        System.out.println("---------------------------");
+
 
         /*
          * EXERCISE 2: Average Grade Calculator
@@ -31,8 +31,8 @@ public class Exercise01Variables {
          * Print the result. Note: Be careful with integer division!
          */
 
-        System.out.println("EXERCISE 2: Average Grade Calculator");
         System.out.println("---------------------------");
+        System.out.println("EXERCISE 2: Average Grade Calculator");
 
         int gradeOne = 7;
         int gradeTwo = 6;

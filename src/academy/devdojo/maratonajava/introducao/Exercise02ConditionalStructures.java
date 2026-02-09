@@ -11,7 +11,7 @@ public class Exercise02ConditionalStructures {
 
         System.out.println("---------------------------");
         System.out.println("EXERCISE 3: Even or Odd");
-        System.out.println("---------------------------");
+
 
         int number = 3;
 
@@ -30,7 +30,6 @@ public class Exercise02ConditionalStructures {
 
         System.out.println("---------------------------");
         System.out.println("EXERCISE 4: Basic Calculator (Switch Case)");
-        System.out.println("---------------------------");
 
         double numberOne = 47;
         double numberTwo = 24;
