@@ -12,13 +12,13 @@ public class CarTest01 {
         carOne.model = "Limited";
         carOne.year = 2009;
 
-        System.out.println("First car: " + carOne.name + " " + carOne.model + ". Year: " + carOne.year);
-        
-        System.out.println("----------------------");
-
         carTwo.name = "Prius";
         carTwo.model = "Infinity";
         carTwo.year = 2024;
+
+        System.out.println("First car: " + carOne.name + " " + carOne.model + ". Year: " + carOne.year);
+
+        System.out.println("----------------------");
 
         System.out.println("Second car: " + carTwo.name + " " + carTwo.model + ". Year: " + carTwo.year);
     }
