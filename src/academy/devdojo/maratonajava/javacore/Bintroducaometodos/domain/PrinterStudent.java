@@ -6,5 +6,7 @@ public class PrinterStudent {
         System.out.println(student.age);
         System.out.println(student.gender);
         System.out.println("-------------------------");
+
+        student.name = "Gohan";
     }
 }

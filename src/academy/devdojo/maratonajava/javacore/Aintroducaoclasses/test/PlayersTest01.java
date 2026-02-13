@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test;
 
 import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.domain.Players;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.domain.PlayersPrinter;
 
 public class PlayersTest01 {
     public static void main(String[] args) {
@@ -9,6 +10,7 @@ public class PlayersTest01 {
         Players player3 = new Players();
         Players player4 = new Players();
         Players player5 = new Players();
+        PlayersPrinter printer = new PlayersPrinter();
 
         player1.name = "Hulk";
         player1.position = "Forward";
@@ -35,40 +37,47 @@ public class PlayersTest01 {
         player5.age = 34;
         player5.stars = 2;
 
-        System.out.println("Player 1 Registered!");
-        System.out.println("Player Name: " + player1.name);
-        System.out.println("Player Age : " + player1.age);
-        System.out.println("Player Position: " + player1.position);
-        System.out.println("Player Stars : " + player1.stars);
-        System.out.println("-----------------------");
+//        System.out.println("Player 1 Registered!");
+//        System.out.println("Player Name: " + player1.name);
+//        System.out.println("Player Age : " + player1.age);
+//        System.out.println("Player Position: " + player1.position);
+//        System.out.println("Player Stars : " + player1.stars);
+//        System.out.println("-----------------------");
+//
+//        System.out.println("Player 2 Registered!");
+//        System.out.println("Player Name: " + player2.name);
+//        System.out.println("Player Age : " + player2.age);
+//        System.out.println("Player Position: " + player2.position);
+//        System.out.println("Player Stars : " + player2.stars);
+//        System.out.println("-----------------------");
+//
+//        System.out.println("Player 3 Registered!");
+//        System.out.println("Player Name: " + player3.name);
+//        System.out.println("Player Age : " + player3.age);
+//        System.out.println("Player Position: " + player3.position);
+//        System.out.println("Player Stars : " + player3.stars);
+//        System.out.println("-----------------------");
+//
+//        System.out.println("Player 4 Registered!");
+//        System.out.println("Player Name: " + player4.name);
+//        System.out.println("Player Age : " + player4.age);
+//        System.out.println("Player Position: " + player4.position);
+//        System.out.println("Player Stars : " + player4.stars);
+//        System.out.println("-----------------------");
+//
+//        System.out.println("Player 5 Registered!");
+//        System.out.println("Player Name: " + player5.name);
+//        System.out.println("Player Age : " + player5.age);
+//        System.out.println("Player Position: " + player5.position);
+//        System.out.println("Player Stars : " + player5.stars);
+//        System.out.println("-----------------------");
 
-        System.out.println("Player 2 Registered!");
-        System.out.println("Player Name: " + player2.name);
-        System.out.println("Player Age : " + player2.age);
-        System.out.println("Player Position: " + player2.position);
-        System.out.println("Player Stars : " + player2.stars);
-        System.out.println("-----------------------");
+        printer.print(player1);
+        printer.print(player2);
+        printer.print(player3);
+        printer.print(player4);
+        printer.print(player5);
 
-        System.out.println("Player 3 Registered!");
-        System.out.println("Player Name: " + player3.name);
-        System.out.println("Player Age : " + player3.age);
-        System.out.println("Player Position: " + player3.position);
-        System.out.println("Player Stars : " + player3.stars);
-        System.out.println("-----------------------");
-
-        System.out.println("Player 4 Registered!");
-        System.out.println("Player Name: " + player4.name);
-        System.out.println("Player Age : " + player4.age);
-        System.out.println("Player Position: " + player4.position);
-        System.out.println("Player Stars : " + player4.stars);
-        System.out.println("-----------------------");
-
-        System.out.println("Player 5 Registered!");
-        System.out.println("Player Name: " + player5.name);
-        System.out.println("Player Age : " + player5.age);
-        System.out.println("Player Position: " + player5.position);
-        System.out.println("Player Stars : " + player5.stars);
-        System.out.println("-----------------------");
 
 
     }
