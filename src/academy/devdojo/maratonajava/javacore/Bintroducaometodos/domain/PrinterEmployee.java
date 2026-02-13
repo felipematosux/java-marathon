@@ -8,7 +8,7 @@ public class PrinterEmployee {
         System.out.println("Age: " + employee.age);
     }
 
-    public void printSalary(int... numbers) {
+    public void printAverage(double... numbers) {
         double sum = 0;
         double average = 0;
         for (double num : numbers ) {
@@ -16,6 +16,11 @@ public class PrinterEmployee {
             average = sum / numbers.length;
         }
         System.out.println("Average: " + average);
+    }
 
+    public void printSalary(double... salary) {
+        for (double salaries : salary ) {
+            System.out.println("R$" + salaries + " ");
+        }
     }
 }

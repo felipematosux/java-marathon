@@ -13,6 +13,7 @@ public class EmployeeTest01 {
 
         employeePrinterData.printData(employeeData);
         employeePrinterData.printSalary(5000,3500,1300);
+        employeePrinterData.printAverage(5000,3500,1300);
 
 
     }
