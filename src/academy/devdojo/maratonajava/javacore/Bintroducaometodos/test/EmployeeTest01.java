@@ -1,19 +1,18 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 
 import academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain.Employee;
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain.PrinterEmployee;
 
 public class EmployeeTest01 {
     public static void main(String[] args) {
-        Employee employeeData = new Employee();
-        PrinterEmployee employeePrinterData = new PrinterEmployee();
+        Employee employee01 = new Employee();
 
-        employeeData.name = "Hulk";
-        employeeData.age = 40;
+        employee01.setName("Hulk");
+        employee01.setAge(40);
+        employee01.setSalary(new double[]{5000, 3500,1300});
 
-        employeePrinterData.printData(employeeData);
-        employeePrinterData.printSalary(5000,3500,1300);
-        employeePrinterData.printAverage(5000,3500,1300);
+        employee01.printData();
+
+
 
 
     }
