@@ -13,12 +13,13 @@ public class Frog {
         this.frogs = frogs;
     }
 
-    public void callFrogs(String[] frogs) {
+    public void callFrogs() {
         System.out.println("Frogs Available:");
-        if (this.frogs == null || this.frogs.length == 0) return;
+        if (this.frogs == null) return;
         for (Frog frog : frogs) {
             System.out.println(frog.getName());
         }
+        System.out.println("--------------------");
     }
 
     public String getName() {
