@@ -18,6 +18,8 @@ public class KeyboardReaderTest01 {
         System.out.println("What is your sex (M/F)?");
         char sex = input.next().charAt(0);
 
+        input.close();
+
         System.out.println("--------------------");
 
         System.out.println("Thanks for registering!");
