@@ -7,9 +7,14 @@ public class Fight {
     static void main(String[] args) {
         Naruto naruto = new Naruto("Naruto");
         Frog frog = new Frog("Gamabunta");
+        Frog frog2 = new Frog("Gamakichi");
 
-        naruto.callFrog(frog);
+        Frog[] frogs = {frog, frog2};
 
-        naruto.useFrog(frog);
+        naruto.print();
+
+        naruto.print();
+
+
     }
 }
