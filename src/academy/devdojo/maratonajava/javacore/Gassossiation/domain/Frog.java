@@ -2,22 +2,22 @@ package academy.devdojo.maratonajava.javacore.Gassossiation.domain;
 
 public class Frog {
     private String name;
-    private String[] frogs;
+    private Frog[] frogs;
 
     public Frog(String name) {
         this.name = name;
     }
 
-    public Frog(String name, String[] frogs) {
+    public Frog(String name, Frog[] frogs) {
         this.name = name;
         this.frogs = frogs;
     }
 
-    public void callFrogs() {
-        if (this.frogs == null) return;
-        for (String frog : frogs) {
-            System.out.println("Frogs Available:");
-            System.out.println(frog);
+    public void callFrogs(String[] frogs) {
+        System.out.println("Frogs Available:");
+        if (this.frogs == null || this.frogs.length == 0) return;
+        for (Frog frog : frogs) {
+            System.out.println(frog.getName());
         }
     }
 
@@ -29,11 +29,11 @@ public class Frog {
         this.name = name;
     }
 
-    public String[] getFrogs() {
+    public Frog[] getFrogs() {
         return frogs;
     }
 
-    public void setFrogs(String[] frogs) {
+    public void setFrogs(Frog[] frogs) {
         this.frogs = frogs;
     }
 }

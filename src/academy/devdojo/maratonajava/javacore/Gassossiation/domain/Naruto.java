@@ -8,17 +8,21 @@ public class Naruto {
         this.name = name;
     }
 
-    public void callFrog(Frog invocationJutsu){
+    public Naruto(String name, Frog invocationJutsu) {
+        this.name = name;
         this.invocationJutsu = invocationJutsu;
-        if (this.invocationJutsu == null) return;
+    }
+
+    public void callFrog(){
+        if (invocationJutsu == null) return;
         System.out.println(invocationJutsu.getName() + " appears!");
     }
 
-    public void useFrog(Frog invocationJutsu){
-        this.invocationJutsu = invocationJutsu;
-        if (this.invocationJutsu == null) return;
+    public void useFrog(){
         System.out.println(this.name + " says: ATTACK!!");
+        if (this.invocationJutsu == null) return;
         System.out.println(invocationJutsu.getName() + " uses his KATANA!");
+        System.out.println("---------------------------");
     }
 
     public String getName() {
@@ -27,5 +31,13 @@ public class Naruto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Frog getInvocationJutsu() {
+        return invocationJutsu;
+    }
+
+    public void setInvocationJutsu(Frog invocationJutsu) {
+        this.invocationJutsu = invocationJutsu;
     }
 }

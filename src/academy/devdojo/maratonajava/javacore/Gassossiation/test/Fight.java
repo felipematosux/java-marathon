@@ -4,16 +4,31 @@ import academy.devdojo.maratonajava.javacore.Gassossiation.domain.Frog;
 import academy.devdojo.maratonajava.javacore.Gassossiation.domain.Naruto;
 
 public class Fight {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Naruto naruto = new Naruto("Naruto");
+        Naruto sasuke = new Naruto("Sasuke");
+
         Frog frog = new Frog("Gamabunta");
-        Frog frog2 = new Frog("Gamakichi");
+        Frog frog2 = new Frog("Nagini");
+        Frog frog3 = new Frog("Gamakichi");
 
-        Frog[] frogs = {frog, frog2};
+        naruto.setInvocationJutsu(frog);
+        sasuke.setInvocationJutsu(frog2);
 
-        naruto.print();
+        Frog[] frogTeam = {frog, frog2, frog3};
 
-        naruto.print();
+        frog.setFrogs(frogTeam);
+
+        naruto.callFrog();
+        naruto.useFrog();
+
+        sasuke.callFrog();
+        sasuke.useFrog();
+
+
+
+
+
 
 
     }
