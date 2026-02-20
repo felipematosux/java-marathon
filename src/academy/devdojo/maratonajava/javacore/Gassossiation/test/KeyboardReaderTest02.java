@@ -6,6 +6,7 @@ public class KeyboardReaderTest02 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+
         System.out.println("Bem-vindo ao App que prevê o futuro");
         System.out.println("----------------------------------------------------");
 
