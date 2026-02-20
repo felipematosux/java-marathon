@@ -1,0 +1,31 @@
+package academy.devdojo.maratonajava.javacore.Hinheritance.domain;
+
+public class Address {
+    private String street;
+    private String zipcode;
+
+    public Address(String street, String zipcode) {
+        this.zipcode = zipcode;
+        this.street = street;
+    }
+
+    public Address() {
+
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+}
