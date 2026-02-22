@@ -16,9 +16,9 @@ public class Employee extends Person {
         System.out.println("Salary: $" + this.salary);
     }
 
-    public void paymentRelatory(){
+    public void paymentReport(){
         System.out.println("==============================================================");
-        System.out.println("--- Payment Relatory: ---");
+        System.out.println("--- Payment Report: ---");
         System.out.println("I, " + this.name + " received the amount of $" + this.salary);
     }
 
