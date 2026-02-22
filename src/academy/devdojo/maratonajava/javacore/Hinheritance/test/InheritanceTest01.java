@@ -26,6 +26,8 @@ public class InheritanceTest01 {
         employee.setSalary(20000);
         employee.print();
 
+        employee.paymentRelatory();
+
 
     }
 }

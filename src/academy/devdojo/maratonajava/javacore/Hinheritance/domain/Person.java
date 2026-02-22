@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Hinheritance.domain;
 
 public class Person {
-    private String name;
-    private String socialSecurityNumber;
-    private Address address;
+    protected String name;
+    protected String socialSecurityNumber;
+    protected Address address;
 
     public Person(String name, String socialSecurityNumber) {
         this.name = name;
