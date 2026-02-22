@@ -3,8 +3,8 @@ package academy.devdojo.maratonajava.javacore.Hinheritance.domain;
 public class Employee extends Person {
     private double salary;
 
-    public Employee(String name, String socialSecurityNumber, Address address) {
-        super(name, socialSecurityNumber, address);
+    public Employee(String name) {
+        super(name);
     }
 
     public double getSalary() {

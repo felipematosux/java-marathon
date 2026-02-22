@@ -5,10 +5,8 @@ public class Person {
     protected String socialSecurityNumber;
     protected Address address;
 
-    public Person(String name, String socialSecurityNumber, Address address) {
+    public Person(String name) {
         this.name = name;
-        this.socialSecurityNumber = socialSecurityNumber;
-        this.address = address;
     }
 
     public void print() {

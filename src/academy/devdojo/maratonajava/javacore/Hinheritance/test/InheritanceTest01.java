@@ -10,15 +10,17 @@ public class InheritanceTest01 {
         address.setStreet("Rua Carindé");
         address.setZipcode("32681-412");
 
-        Person person = new Person("Luffy D. Luffy", "3254152322", address);
-
+        Person person = new Person("Luffy D. Luffy");
+        person.setSocialSecurityNumber("3254152322");
+        person.setAddress(address);
 
         person.print();
 
         System.out.println("--------------------------");
 
-        Employee employee = new Employee("Oda Nobunaga", "3254152322", address);
-
+        Employee employee = new Employee("Oda Nobunaga");
+        employee.setSocialSecurityNumber("3254152322");
+        employee.setAddress(address);
         employee.setSalary(20000);
         employee.print();
 
