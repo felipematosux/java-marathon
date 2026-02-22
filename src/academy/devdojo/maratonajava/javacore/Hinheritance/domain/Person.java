@@ -5,15 +5,6 @@ public class Person {
     protected String socialSecurityNumber;
     protected Address address;
 
-    public Person(String name, String socialSecurityNumber) {
-        this.name = name;
-        this.socialSecurityNumber = socialSecurityNumber;
-    }
-
-    public Person() {
-
-    }
-
     public Person(String name, String socialSecurityNumber, Address address) {
         this.name = name;
         this.socialSecurityNumber = socialSecurityNumber;

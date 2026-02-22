@@ -3,6 +3,10 @@ package academy.devdojo.maratonajava.javacore.Hinheritance.domain;
 public class Employee extends Person {
     private double salary;
 
+    public Employee(String name, String socialSecurityNumber, Address address) {
+        super(name, socialSecurityNumber, address);
+    }
+
     public double getSalary() {
         return salary;
     }
@@ -13,6 +17,8 @@ public class Employee extends Person {
     }
 
     public void paymentRelatory(){
+        System.out.println("==============================================================");
+        System.out.println("--- Payment Relatory: ---");
         System.out.println("I, " + this.name + " received the amount of $" + this.salary);
     }
 
