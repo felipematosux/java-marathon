@@ -1,36 +1,28 @@
 package academy.devdojo.maratonajava.javacore.Kenums.domain;
 
 public class Costumer {
+    public enum PaymentType{
+        DEBIT, CREDIT
+    }
+
     private String name;
     private CostumerType costumerType;
+    private PaymentType paymentType;
 
 
-    public Costumer(String name, CostumerType costumerType) {
+    public Costumer(String name, CostumerType costumerType, PaymentType paymentType) {
         this.name = name;
         this.costumerType = costumerType;
+        this.paymentType = paymentType;
     }
 
     @Override
     public String toString() {
         return "Costumer{" +
                 "name='" + name + '\'' +
-                ", costumerType=" + costumerType +
+                ", costumerType=" + costumerType.getNameReport() +
+                ", costumerTypeInt=" + costumerType.getValue() +
+                ", paymentType=" + paymentType +
                 '}';
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public CostumerType getCostumerType() {
-        return costumerType;
-    }
-
-    public void setCostumerType(CostumerType costumerType) {
-        this.costumerType = costumerType;
     }
 }

@@ -1,7 +1,23 @@
 package academy.devdojo.maratonajava.javacore.Kenums.domain;
 
 public enum CostumerType {
-    COSTUMER,
-    COMPANY
+    COSTUMER(1, "Costumer"),
+    COMPANY(2, "Company");
+
+    private final int value;
+    private final String nameReport;
+
+    CostumerType(int value, String nameReport) {
+        this.value = value;
+        this.nameReport = nameReport;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getNameReport() {
+        return nameReport;
+    }
 }
 
