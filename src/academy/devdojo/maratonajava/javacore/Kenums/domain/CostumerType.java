@@ -12,6 +12,15 @@ public enum CostumerType {
         this.nameReport = nameReport;
     }
 
+    public static CostumerType costumerTypeForReportName(String nameReport) {
+        for (CostumerType costumerType : CostumerType.values()) {
+            if (costumerType.getNameReport().equals(nameReport)){
+                return costumerType;
+            }
+        }
+        return null;
+    }
+
     public int getValue() {
         return value;
     }
