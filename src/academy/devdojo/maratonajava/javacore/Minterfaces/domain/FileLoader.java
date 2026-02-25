@@ -16,4 +16,14 @@ public class FileLoader implements DataLoader, DataRemover {
     public void checkPermission() {
         System.out.println("Checking permission in the File Loader...");
     }
+
+    public static void chamaNaCatchanga(){
+        System.out.println("================================");
+        System.out.println("");
+        System.out.println("   Chama na Catchanga PAPAI!!");
+        System.out.println("");
+        System.out.println("================================");
+    }
+
+
 }

@@ -1,5 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Minterfaces.test;
 
+import academy.devdojo.maratonajava.javacore.Minterfaces.domain.DataLoader;
 import academy.devdojo.maratonajava.javacore.Minterfaces.domain.DatabaseLoader;
 import academy.devdojo.maratonajava.javacore.Minterfaces.domain.FileLoader;
 
@@ -16,5 +17,10 @@ public class DataLoaderTest01 {
 
         databaseLoader.checkPermission();
         fileLoader.checkPermission();
+
+        DataLoader.retrieveMaxDataSize();
+        DatabaseLoader.retrieveMaxDataSize();
+
+        System.out.println(DataLoader.MAX_DATA_SIZE + "mb");
     }
 }
