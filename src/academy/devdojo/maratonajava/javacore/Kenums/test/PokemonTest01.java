@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Kenums.test;
 
+import academy.devdojo.maratonajava.javacore.Kenums.exercise.*;
+
 public class PokemonTest01 {
 
     /**
@@ -45,5 +47,29 @@ public class PokemonTest01 {
 
     public static void main(String[] args) {
 
+        System.out.println("==== 1. ENUM TESTING (Search & Overriding) ====");
+        PokemonType typeGrass = PokemonType.typeForBrName("Grama");
+        System.out.println("Search by 'Grama': " + typeGrass);
+        System.out.println("Fire Effectiveness: " + PokemonType.FIRE.getEffectiveness());
+        System.out.println("Dragon Effectiveness: " + PokemonType.DRAGON.getEffectiveness());
+
+        System.out.println("\n==== 2. INHERITANCE & FINAL METHOD TESTING ====");
+        StarterPokemon torchic = new StarterPokemon("Torchic", 5, PokemonType.FIRE, "Hoenn");
+        StarterPokemon mudkip = new StarterPokemon("Mudkip", 5, PokemonType.WATER, "Hoenn");
+        StarterPokemon treecko = new StarterPokemon("Treecko", 5, PokemonType.GRASS, "Hoenn");
+
+        System.out.println(torchic);
+        torchic.evolve();
+
+        System.out.println("\n==== 3. FINAL CLASS TESTING (Legendary) ====");
+        LegendaryPokemon rayquaza = new LegendaryPokemon("Rayquaza", 70, PokemonType.DRAGON, "Dragon Ascent");
+        System.out.println(rayquaza);
+        System.out.println("Signature Move: " + rayquaza.getSignatureMove());
+
+        System.out.println("\n==== 4. 1:N ASSOCIATION TESTING (Trainer) ====");
+        StarterPokemon[] hoennTeam = {torchic, mudkip, treecko};
+        Trainer brendan = new Trainer("Brendan", hoennTeam);
+
+        brendan.printTeam();
     }
 }
