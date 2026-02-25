@@ -13,8 +13,6 @@ public enum PokemonType {
     ELECTRIC("Elétrico");
 
     private String nameBR;
-    private String effectiveness;
-
 
     PokemonType(String nameBR) {
         this.nameBR = nameBR;
