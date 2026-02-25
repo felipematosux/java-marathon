@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Kenums.exercise;
 
 public class Trainer {
     private String name;
-    StarterPokemon[] starterPokemonTeam;
+    private StarterPokemon[] starterPokemonTeam;
 
     public Trainer(String name, StarterPokemon[] starterPokemonTeam) {
         this.name = name;
