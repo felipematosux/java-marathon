@@ -1,16 +1,18 @@
 package academy.devdojo.maratonajava.javacore.Gassossiation.domain;
 
+import academy.devdojo.maratonajava.javacore.Gassossiation.test.Rank;
+
 public class Ninjas {
     private String name;
-    private String rank;
+    private Rank rank;
     private TeamNinja team;
 
-    public Ninjas(String name, String rank) {
+    public Ninjas(String name, Rank rank) {
         this.name = name;
         this.rank = rank;
     }
 
-    public Ninjas(String name, String rank, TeamNinja team) {
+    public Ninjas(String name, Rank rank, TeamNinja team) {
         this.name = name;
         this.rank = rank;
         this.team = team;
@@ -24,11 +26,11 @@ public class Ninjas {
         this.name = name;
     }
 
-    public String getRank() {
+    public Rank getRank() {
         return rank;
     }
 
-    public void setRank(String rank) {
+    public void setRank(Rank rank) {
         this.rank = rank;
     }
 

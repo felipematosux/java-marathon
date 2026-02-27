@@ -26,9 +26,9 @@ public class KonohaTest01 {
      */
 
     public static void main(String[] args){
-        Ninjas ninja1 = new Ninjas("Naruto", "Genin");
-        Ninjas ninja2 = new Ninjas("Sakura", "Genin");
-        Ninjas ninja3 = new Ninjas("Sasuke", "Genin");
+        Ninjas ninja1 = new Ninjas("Naruto", Rank.GENIN);
+        Ninjas ninja2 = new Ninjas("Sakura", Rank.JOUNNIN);
+        Ninjas ninja3 = new Ninjas("Sasuke", Rank.GENIN);
 
 
         Mission mission1 = new Mission("Escort the Bridge Builder", "C-Rank");
