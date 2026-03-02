@@ -10,9 +10,10 @@ public class ProductTest01 {
         Tomato tomato = new Tomato("Hawaiian Tomato", 10);
 
 
-        TaxCalculator.computerTaxCalculation(computer);
+        TaxCalculator.taxCalculation(computer);
         System.out.println("---------------------------");
-        TaxCalculator.tomatoTaxCalculation(tomato);
+        TaxCalculator.taxCalculation(tomato);
+        System.out.println(tomato.getExpirationDate());
 
     }
 }
