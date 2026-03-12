@@ -33,6 +33,10 @@ public class WrapperTest01 {
         System.out.println(Character.toUpperCase('a'));
         System.out.println(Character.toLowerCase('A'));
 
+        Float salary = 3568.32F;
+        System.out.println(salary.getClass());
+        System.out.println(salary.equals(intW2));
+
 
 
     }
