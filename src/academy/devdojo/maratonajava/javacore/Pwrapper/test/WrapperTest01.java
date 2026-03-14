@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Pwrapper.test;
 
+import academy.devdojo.maratonajava.javacore.Gassossiation.domain.Ninja;
+
 public class WrapperTest01 {
     public static void main(String[] args) {
         byte byteP = 1;
@@ -32,6 +34,7 @@ public class WrapperTest01 {
         System.out.println(Character.isUpperCase('A'));
         System.out.println(Character.toUpperCase('a'));
         System.out.println(Character.toLowerCase('A'));
+        System.out.println(Character.compare(charW, 'G'));
 
 
 
